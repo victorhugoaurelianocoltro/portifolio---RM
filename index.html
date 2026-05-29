@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RM Engenharia Elétrica — Excelência em engenharia elétrica industrial, automação, SPDA, projetos e manutenção. Soluções inteligentes para indústria.">
+  <meta name="keywords" content="engenharia elétrica, industrial, automação, SPDA, painéis elétricos, RM Engenharia">
+  <meta name="author" content="RM Engenharia Elétrica">
+  <meta name="theme-color" content="#0a1628">
+  <title>RM Engenharia Elétrica | Engenharia Industrial Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== PRELOADER ========== -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__logo" aria-hidden="true">
+        <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M28 6 L46 28 L28 50 L10 28 Z" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M28 14 L38 28 L28 42 L18 28 Z" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+          <text x="28" y="32" text-anchor="middle" fill="currentColor" font-size="11" font-weight="700">RM</text>
+        </svg>
+      </div>
+      <div class="preloader__bar"><span></span></div>
+      <p class="preloader__text">Carregando experiência premium</p>
+    </div>
+  </div>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <a href="#hero" class="header__brand" aria-label="RM Engenharia Elétrica — Início">
+        <img src="assets/icons/logo.svg" alt="" class="header__logo" width="40" height="40">
+        <span class="header__name">
+          <strong>RM</strong> Engenharia
+          <small>Elétrica</small>
+        </span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#projetos" class="nav__link">Projetos</a></li>
+          <li><a href="#clientes" class="nav__link">Clientes</a></li>
+          <li><a href="#diferenciais" class="nav__link">Diferenciais</a></li>
+          <li><a href="#contato" class="nav__link nav__link--cta">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="header__toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero" aria-label="Apresentação">
+      <div class="hero__bg">
+        <div class="hero__bg-image" data-parallax="0.3"></div>
+        <div class="hero__overlay"></div>
+        <canvas class="hero__particles" id="particles" aria-hidden="true"></canvas>
+      </div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow reveal">Engenharia Elétrica Industrial</p>
+        <h1 class="hero__title reveal">
+          Excelência em<br>
+          <span class="text-gradient">Engenharia Elétrica Industrial</span>
+        </h1>
+        <p class="hero__subtitle reveal">
+          Projetamos, implementamos e mantemos infraestruturas elétricas de alta performance
+          para indústrias que exigem segurança, precisão e inovação.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#contato" class="btn btn--primary">Solicitar orçamento</a>
+          <a href="#projetos" class="btn btn--ghost">Ver projetos</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="850">0</span>
+            <span class="hero__stat-label">Projetos</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="15">0</span>
+            <span class="hero__stat-label">Anos</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="120">0</span>
+            <span class="hero__stat-label">Clientes</span>
+          </div>
+        </div>
+      </div>
+      <a href="#sobre" class="hero__scroll" aria-label="Rolar para conteúdo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section class="section sobre" id="sobre" aria-labelledby="sobre-title">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__tag">Sobre a empresa</span>
+          <h2 class="section__title" id="sobre-title">Engenharia que move a indústria</h2>
+          <p class="section__desc">
+            A <strong>RM Engenharia Elétrica</strong> atua com excelência técnica em soluções elétricas
+            industriais, unindo segurança normativa, inovação e execução impecável em cada entrega.
+          </p>
+        </header>
+        <div class="sobre__grid">
+          <div class="sobre__visual reveal">
+            <img src="assets/images/about-visual.svg" alt="Visualização industrial — RM Engenharia" width="600" height="500" loading="lazy">
+            <div class="sobre__badge glass">
+              <span>+15 anos</span>
+              <small>de experiência</small>
+            </div>
+          </div>
+          <div class="sobre__content">
+            <p class="sobre__text reveal">
+              Somos referência em engenharia elétrica para plantas industriais, centros logísticos
+              e complexos produtivos. Nossa equipe multidisciplinar entrega projetos, montagens e
+              manutenções com padrão corporativo internacional.
+            </p>
+            <div class="sobre__cards">
+              <article class="mvv-card glass reveal">
+                <div class="mvv-card__icon" aria-hidden="true">◆</div>
+                <h3>Missão</h3>
+                <p>Entregar soluções elétricas industriais seguras, eficientes e sustentáveis, superando expectativas técnicas e operacionais.</p>
+              </article>
+              <article class="mvv-card glass reveal">
+                <div class="mvv-card__icon" aria-hidden="true">◇</div>
+                <h3>Visão</h3>
+                <p>Ser reconhecida como parceira estratégica em engenharia elétrica industrial na América Latina.</p>
+              </article>
+              <article class="mvv-card glass reveal">
+                <div class="mvv-card__icon" aria-hidden="true">○</div>
+                <h3>Valores</h3>
+                <p>Integridade, excelência técnica, segurança, inovação e compromisso com o cliente.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="timeline reveal">
+          <h3 class="timeline__title">Nossa trajetória</h3>
+          <ol class="timeline__list">
+            <li class="timeline__item">
+              <span class="timeline__year">2010</span>
+              <div class="timeline__body glass">
+                <h4>Fundação</h4>
+                <p>Início das operações em engenharia elétrica industrial na região metropolitana de São Paulo.</p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__year">2015</span>
+              <div class="timeline__body glass">
+                <h4>Expansão técnica</h4>
+                <p>Ampliação da equipe e portfólio com automação, SPDA e infraestrutura elétrica.</p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__year">2020</span>
+              <div class="timeline__body glass">
+                <h4>Certificações</h4>
+                <p>Consolidação de processos com foco em NR-10, qualidade e gestão de projetos complexos.</p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__year">2026</span>
+              <div class="timeline__body glass">
+                <h4>Inovação contínua</h4>
+                <p>Integração de tecnologias digitais, IoT industrial e painéis inteligentes.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVIÇOS ========== -->
+    <section class="section servicos" id="servicos" aria-labelledby="servicos-title">
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <span class="section__tag">Serviços</span>
+          <h2 class="section__title" id="servicos-title">Soluções completas em engenharia elétrica</h2>
+          <p class="section__desc">Do projeto à manutenção — infraestrutura elétrica com padrão premium.</p>
+        </header>
+        <div class="servicos__grid">
+          <article class="service-card reveal">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+            <h3>Elétrica Industrial</h3>
+            <p>Instalações e sistemas elétricos para ambientes industriais de alta demanda.</p>
+            <span class="service-card__line"></span>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+            <h3>SPDA</h3>
+            <p>Proteção contra descargas atmosféricas conforme normas ABNT e melhores práticas.</p>
+            <span class="service-card__line"></span>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3>Automação</h3>
+            <p>CLPs, IHMs e integração de processos para máxima eficiência operacional.</p>
+            <span class="service-card__line"></span>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+            <h3>Montagem Elétrica</h3>
+            <p>Execução técnica com equipe certificada e controle rigoroso de qualidade.</p>
+            <span class="service-card__line"></span>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg></div>
+            <h3>Projetos Elétricos</h3>
+            <p>Memoriais, diagramas unifilares e documentação executiva completa.</p>
+            <span class="service-card__line"></span>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3>Manutenção Industrial</h3>
+            <p>Planos preventivos e corretivos para continuidade e segurança operacional.</p>
+            <span class="service-card__line"></span>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+            <h3>Painéis Elétricos</h3>
+            <p>Projeto, fabricação e instalação de CCMs e quadros de distribuição.</p>
+            <span class="service-card__line"></span>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></div>
+            <h3>Infraestrutura</h3>
+            <p>Subestações, cabine primária e redes de média e baixa tensão.</p>
+            <span class="service-card__line"></span>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div>
+            <h3>Comandos Elétricos</h3>
+            <p>Sistemas de partida, proteção e controle de motores e cargas industriais.</p>
+            <span class="service-card__line"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJETOS ========== -->
+    <section class="section projetos" id="projetos" aria-labelledby="projetos-title">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__tag">Projetos</span>
+          <h2 class="section__title" id="projetos-title">Obras que definem excelência</h2>
+          <p class="section__desc">Cases fictícios para demonstração — substitua por projetos reais.</p>
+        </header>
+        <div class="projetos__grid">
+          <article class="project-card reveal" tabindex="0" role="button"
+            data-title="Planta Industrial Alpha"
+            data-category="Automação &amp; Painéis"
+            data-desc="Modernização completa de CCM e automação de linha de produção com integração SCADA. Redução de 32% no tempo de parada não programada."
+            data-img="assets/images/project-1.svg">
+            <div class="project-card__img"><img src="assets/images/project-1.svg" alt="Planta Industrial Alpha" loading="lazy"></div>
+            <div class="project-card__overlay">
+              <span class="project-card__cat">Automação</span>
+              <h3>Planta Industrial Alpha</h3>
+              <span class="project-card__more">Ver detalhes →</span>
+            </div>
+          </article>
+          <article class="project-card reveal" tabindex="0" role="button"
+            data-title="Centro Logístico Beta"
+            data-category="Infraestrutura Elétrica"
+            data-desc="Projeto e execução de subestação e distribuição em baixa tensão para complexo de 45.000 m²."
+            data-img="assets/images/project-2.svg">
+            <div class="project-card__img"><img src="assets/images/project-2.svg" alt="Centro Logístico Beta" loading="lazy"></div>
+            <div class="project-card__overlay">
+              <span class="project-card__cat">Infraestrutura</span>
+              <h3>Centro Logístico Beta</h3>
+              <span class="project-card__more">Ver detalhes →</span>
+            </div>
+          </article>
+          <article class="project-card reveal" tabindex="0" role="button"
+            data-title="Data Center Gamma"
+            data-category="SPDA &amp; Energia"
+            data-desc="Sistema SPDA nível III, aterramento e redundância elétrica para ambiente crítico."
+            data-img="assets/images/project-3.svg">
+            <div class="project-card__img"><img src="assets/images/project-3.svg" alt="Data Center Gamma" loading="lazy"></div>
+            <div class="project-card__overlay">
+              <span class="project-card__cat">SPDA</span>
+              <h3>Data Center Gamma</h3>
+              <span class="project-card__more">Ver detalhes →</span>
+            </div>
+          </article>
+          <article class="project-card reveal" tabindex="0" role="button"
+            data-title="Usina Solar Delta"
+            data-category="Energia Renovável"
+            data-desc="Integração de geração fotovoltaica à rede industrial existente com monitoramento remoto."
+            data-img="assets/images/project-1.svg">
+            <div class="project-card__img"><img src="assets/images/project-1.svg" alt="Usina Solar Delta" loading="lazy"></div>
+            <div class="project-card__overlay">
+              <span class="project-card__cat">Energia</span>
+              <h3>Usina Solar Delta</h3>
+              <span class="project-card__more">Ver detalhes →</span>
+            </div>
+          </article>
+          <article class="project-card reveal" tabindex="0" role="button"
+            data-title="Hospital Industrial Epsilon"
+            data-category="Manutenção &amp; NR-10"
+            data-desc="Plano de manutenção preventiva e adequação normativa em instalações de alta complexidade."
+            data-img="assets/images/project-2.svg">
+            <div class="project-card__img"><img src="assets/images/project-2.svg" alt="Hospital Industrial Epsilon" loading="lazy"></div>
+            <div class="project-card__overlay">
+              <span class="project-card__cat">Manutenção</span>
+              <h3>Hospital Industrial Epsilon</h3>
+              <span class="project-card__more">Ver detalhes →</span>
+            </div>
+          </article>
+          <article class="project-card reveal" tabindex="0" role="button"
+            data-title="Fábrica Automotiva Zeta"
+            data-category="Comandos Elétricos"
+            data-desc="Retrofit de comandos, soft-starters e proteção de motores em linha de montagem."
+            data-img="assets/images/project-3.svg">
+            <div class="project-card__img"><img src="assets/images/project-3.svg" alt="Fábrica Automotiva Zeta" loading="lazy"></div>
+            <div class="project-card__overlay">
+              <span class="project-card__cat">Comandos</span>
+              <h3>Fábrica Automotiva Zeta</h3>
+              <span class="project-card__more">Ver detalhes →</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CLIENTES ========== -->
+    <section class="section clientes" id="clientes" aria-labelledby="clientes-title">
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <span class="section__tag">Clientes</span>
+          <h2 class="section__title" id="clientes-title">Parceiros que confiam na RM</h2>
+        </header>
+      </div>
+      <div class="clients-slider" aria-label="Logotipos de clientes">
+        <div class="clients-slider__track" id="clientsTrack">
+          <div class="clients-slider__item"><img src="assets/images/clients/client-1.svg" alt="Nexus Steel" width="160" height="48"></div>
+          <div class="clients-slider__item"><img src="assets/images/clients/client-2.svg" alt="Volt Indústria" width="160" height="48"></div>
+          <div class="clients-slider__item"><img src="assets/images/clients/client-3.svg" alt="Metalcore" width="160" height="48"></div>
+          <div class="clients-slider__item"><img src="assets/images/clients/client-4.svg" alt="Alphatech" width="160" height="48"></div>
+          <div class="clients-slider__item"><img src="assets/images/clients/client-5.svg" alt="Grid Power" width="160" height="48"></div>
+          <div class="clients-slider__item"><img src="assets/images/clients/client-6.svg" alt="Synergy Plant" width="160" height="48"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIFERENCIAIS ========== -->
+    <section class="section diferenciais" id="diferenciais" aria-labelledby="diferenciais-title">
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <span class="section__tag">Diferenciais</span>
+          <h2 class="section__title" id="diferenciais-title">Por que escolher a RM Engenharia</h2>
+        </header>
+        <div class="diferenciais__grid">
+          <article class="diff-card glass reveal">
+            <span class="diff-card__num">01</span>
+            <h3>Qualidade</h3>
+            <p>Processos certificados e inspeção rigorosa em todas as etapas de execução.</p>
+          </article>
+          <article class="diff-card glass reveal">
+            <span class="diff-card__num">02</span>
+            <h3>Segurança</h3>
+            <p>Conformidade NR-10 e cultura de segurança em primeiro lugar.</p>
+          </article>
+          <article class="diff-card glass reveal">
+            <span class="diff-card__num">03</span>
+            <h3>Engenharia especializada</h3>
+            <p>Projetos assinados por profissionais habilitados e experientes.</p>
+          </article>
+          <article class="diff-card glass reveal">
+            <span class="diff-card__num">04</span>
+            <h3>Equipe técnica</h3>
+            <p>Profissionais certificados e treinamento contínuo.</p>
+          </article>
+          <article class="diff-card glass reveal">
+            <span class="diff-card__num">05</span>
+            <h3>Inovação</h3>
+            <p>Tecnologias digitais e soluções inteligentes para a indústria 4.0.</p>
+          </article>
+          <article class="diff-card glass reveal">
+            <span class="diff-card__num">06</span>
+            <h3>Suporte técnico</h3>
+            <p>Atendimento ágil e suporte pós-obra com SLA definido.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== NÚMEROS ========== -->
+    <section class="section numeros" id="numeros" aria-labelledby="numeros-title">
+      <div class="numeros__bg" data-parallax="0.15" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <span class="section__tag">Números</span>
+          <h2 class="section__title section__title--light" id="numeros-title">Resultados que comprovam</h2>
+        </header>
+        <div class="numeros__grid">
+          <div class="counter-card reveal">
+            <span class="counter-card__value" data-target="850" data-suffix="+">0</span>
+            <span class="counter-card__label">Projetos realizados</span>
+          </div>
+          <div class="counter-card reveal">
+            <span class="counter-card__value" data-target="120" data-suffix="+">0</span>
+            <span class="counter-card__label">Clientes ativos</span>
+          </div>
+          <div class="counter-card reveal">
+            <span class="counter-card__value" data-target="15" data-suffix="+">0</span>
+            <span class="counter-card__label">Anos de mercado</span>
+          </div>
+          <div class="counter-card reveal">
+            <span class="counter-card__value" data-target="28" data-suffix="">0</span>
+            <span class="counter-card__label">Cidades atendidas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="section cta" id="contato" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta__box glass reveal">
+          <h2 class="cta__title" id="cta-title">Transformamos engenharia em soluções inteligentes.</h2>
+          <p class="cta__text">Fale com nossa equipe e receba uma proposta técnica personalizada para seu projeto industrial.</p>
+          <div class="cta__actions">
+            <a href="https://wa.me/5511996492647" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">Solicitar orçamento</a>
+            <a href="mailto:rmengenhariaeletrica09@gmail.com" class="btn btn--ghost btn--lg">Enviar e-mail</a>
+          </div>
+          <ul class="cta__contact">
+            <li><a href="tel:+5511996492647">(11) 9.9649-2647</a> <span class="cta__wa">WhatsApp</span></li>
+            <li><a href="tel:+5511954392217">(11) 9.5439-2217</a></li>
+            <li><a href="mailto:rmengenhariaeletrica09@gmail.com">rmengenhariaeletrica09@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#hero" class="footer__logo-link">
+          <img src="assets/icons/logo.svg" alt="" width="48" height="48">
+          <span><strong>RM</strong> Engenharia Elétrica</span>
+        </a>
+        <p class="footer__tagline">Excelência em engenharia elétrica industrial.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn" class="footer__social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="footer__social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://wa.me/5511996492647" aria-label="WhatsApp" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer__nav" aria-label="Links rápidos">
+        <h4>Links rápidos</h4>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+5511996492647">(11) 9.9649-2647</a></li>
+          <li><a href="tel:+5511954392217">(11) 9.5439-2217</a></li>
+          <li><a href="mailto:rmengenhariaeletrica09@gmail.com">rmengenhariaeletrica09@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> RM Engenharia Elétrica. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== MODAL PROJETOS ========== -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__content glass">
+      <button class="modal__close" type="button" data-close aria-label="Fechar">&times;</button>
+      <div class="modal__img-wrap">
+        <img src="" alt="" id="modalImg" class="modal__img">
+      </div>
+      <div class="modal__body">
+        <span class="modal__cat" id="modalCat"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <a href="#contato" class="btn btn--primary" data-close-modal>Solicitar projeto similar</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
